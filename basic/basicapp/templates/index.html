@@ -1,0 +1,35 @@
+{% extends 'base.html' %}
+
+
+{%block title%}home page{%endblock%}
+
+{%block body%}
+
+
+<table class="table container col-lg-6 mt-4">
+  <thead class="thead-dark">
+    <tr>
+      <th scope="col">S.No.</th>
+      <th scope="col">Name</th>
+      <th scope="col">Prize</th>
+      <th scope="col">Discribe</th>
+    </tr>
+  </thead>
+
+  <tbody>
+
+
+{%for i in all_prod %}
+    <tr>
+      <th scope="row">{{forloop.counter}}</th>
+      <td>{{i.name}}</td>
+      <td>{{i.prize}}</td>
+      <td>{{i.discribe}}</td>
+    </tr>
+
+
+{%endfor%}
+
+  </tbody>
+</table>
+{%endblock%}
