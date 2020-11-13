@@ -8,7 +8,7 @@ from django.contrib.auth.hashers import check_password, make_password
 # Create your views here.
 
 
-
+# this is index
 def index(request):
     dis_index=product_info.objects.all()
     d1={'all_prod':dis_index}
